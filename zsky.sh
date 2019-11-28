@@ -8,7 +8,7 @@ if [ $(id -u) != "0" ]; then
 fi
 
 yum -y install git
-git clone https://github.com/wenguonideshou/zsky
+git clone https://github.com/spylfy/zsky
 cd /root/zsky
 
 if [ $(grep SwapTotal /proc/meminfo|grep -v grep|awk '{print $2}') -eq 0 ];then
